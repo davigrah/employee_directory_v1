@@ -18,7 +18,6 @@ fetch(urlAPI)
 function displayEmployees (employeeData) {
   employees = employeeData;
   // store the employee HTML as we create it
-  console.log(employees);
   let employeeHTML = '';
   // loop through each employee and create HTML markup
   employees.forEach((employee, index) => {
@@ -55,7 +54,7 @@ function displayModal (index) {
     <p class="address">${city}</p>
     <hr />
     <p>${phone}</p>
-    <p class="address">${street}, ${state} ${postcode}</p>
+    <p class="address">${street.name}, ${state} ${postcode}</p>
     <p>Birthday:
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     </div>
